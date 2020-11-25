@@ -33,7 +33,7 @@ echo "Email ID check:"
 check $email $patfn
 echo "Phone number check:"
 check $phone $patphone
-echo "Password check for minimum 8 charecters length, at least 1 UpperCase charecter, and at least 1 numeric charecter :"
+echo "Password check for minimum 8 charecters length, at least 1 UpperCase charecter, at least 1 numeric charecter, and exactly 1 special charecter :"
 
 if [[ $password =~ $patpassword ]]	#verifying first that length, uppercase and numerical conditions are satisfied
 then
