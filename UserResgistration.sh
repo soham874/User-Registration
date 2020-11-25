@@ -37,10 +37,10 @@ echo "Password check for minimum 8 charecters length, at least 1 UpperCase chare
 
 if [[ $password =~ $patpassword ]]	#verifying first that length, uppercase and numerical conditions are satisfied
 then
-	if [[ $text =~ $pat1 ]]				#if this case is successful it means there are 2 or more special charecters
+	if [[ $password =~ $patspeccheck2 ]]				#if this case is successful it means there are 2 or more special charecters
 	then
 		echo "Password is invalid. Please try again"
-	elif [[ $text =~ $pat2 ]]			#if case 1 is false and this is true, it means there is exactly 1 special char.
+	elif [[ $password =~ $patspeccheck1 ]]			#if case 1 is false and this is true, it means there is exactly 1 special char.
 	then
 		echo "Password is valid."
 	else						#if both cases fail it means that there are no special charecter
