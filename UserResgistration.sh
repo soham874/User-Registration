@@ -21,7 +21,7 @@ patfn='^[[:upper:]]{1}[[:lower:]]{2,}$'
 patemail='^[a-z0-9]+([._+-][a-z0-9]+)*(@)[a-zA-Z]+[.]{1}[a-z]{2,3}([.][a-z]{2})*$'
 patphone='^[0-9]{2} [0-9]{10}$'
 
-patpassword='^(?=.*[A-Z]{1,}).{8,}$'
+patpassword='^(?=.*[A-Z]{1,})(?=.*[0-9]{1}).{8,}$'
 
 echo "First name check:"
 check $first $patfn
@@ -31,5 +31,5 @@ echo "Email ID check:"
 check $email $patfn
 echo "Phone number check:"
 check $phone $patphone
-echo "Password check for minimum 8 charecters length, and at least 1 UpperCase charecter:"
+echo "Password check for minimum 8 charecters length, at least 1 UpperCase charecter, and at least 1 numeric charecter :"
 check $password $patpassword
