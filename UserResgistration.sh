@@ -18,7 +18,7 @@ read -p "Enter phone number : " phone
 read -p "Enter user password : " password
 
 patfn='^[[:upper:]]{1}[[:lower:]]{2,}$'
-patemail='^[a-z0-9]+([._+-][a-z0-9]+)*(@)[a-zA-Z]+[.]{1}[a-z]{2,3}([.][a-z]{2})*$'
+patemail='^[a-z0-9]+([._+-][a-z0-9]+)*(@)[0-9a-zA-Z]+[.]{1}[a-z]{2,3}([.][a-z]{2})?$'
 patphone='^[0-9]{2} [0-9]{10}$'
 
 patpassword='^(?=.*[A-Z]{1,})(?=.*[0-9]{1}).{8,}$'	#will check for minimum 1 Uppercase, minimum 1 digit and minimum length 8
