@@ -22,8 +22,8 @@ patemail='^[a-z0-9]+([._+-][a-z0-9]+)*(@)[0-9a-zA-Z]+[.]{1}[a-z]{2,3}([.][a-z]{2
 patphone='^[0-9]{2} [0-9]{10}$'
 
 patpassword='^(?=.*[A-Z]{1,})(?=.*[0-9]{1}).{8,}$'	#will check for minimum 1 Uppercase, minimum 1 digit and minimum length 8
-patspeccheck1='^.*[\W].$'				#will return true if at least 1 special charecter exists
-patspeccheck2='(.*?[\W].*?){2,}'			#will return true if at least 2 special charecters exist
+patspeccheck1='^.*[\W].*$'				#will return true if at least 1 special charecter exists
+patspeccheck2='^(.*?[\W].*?){2,}$'			#will return true if at least 2 special charecters exist
 
 echo "First name check:"
 check $first $patfn
