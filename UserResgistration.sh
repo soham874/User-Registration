@@ -30,7 +30,7 @@ check $first $patfn
 echo "Last name check:"
 check $last $patfn
 echo "Email ID check:"
-check $email $patfn
+check $email $patemail
 echo "Phone number check:"
 check $phone $patphone
 echo "Password check for minimum 8 charecters length, at least 1 UpperCase charecter, at least 1 numeric charecter, and exactly 1 special charecter :"
