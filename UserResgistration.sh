@@ -48,7 +48,12 @@ read -p "Enter phone number : " phone
 patphone='^[[:digit:]]{2}([ ])[[:digit:]]{10}$'
 
 echo "##Phone number check:##"
-check $phone $patphone
+if [[ $phone =~ $patphone ]]
+then
+	echo "Entry is valid."
+else
+  	echo "Entry is invalid."
+fi
 
 #~~~~~~~~~~~~~Password check~~~~~~~~~~~~~~~~~
 
